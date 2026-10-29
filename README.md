@@ -1,6 +1,6 @@
 # Nyarchive
 
-A cosy, catgirl-themed Windows app for clipping your gameplay, editing the clips and compressing them to the exact size Discord accepts (=^･ω･^=). Everything happens on your PC: no account, no ads, no tracking and no cloud uploads.
+A cosy, catgirl-themed Windows app for clipping your gameplay, editing the clips and compressing them (=^･ω･^=). Everything happens on your PC: no account, no ads, no tracking and no cloud uploads.
 
 **[Download the newest version](../../releases/latest)** (download `Nyarchive_x.y.z_x64-setup.exe`, then run it). Nyarchive updates itself after that.
 
@@ -17,7 +17,7 @@ A cosy, catgirl-themed Windows app for clipping your gameplay, editing the clips
 - For hardware encoding and the AI tools: an NVIDIA, AMD or Intel graphics card is recommended.
 
 ## Help and feedback
-Found a bug or want a feature? [Open an issue](../../issues). In the app, Settings → Privacy & diagnostics → **Copy diagnostics** collects the details that help (your user name and, if you choose, file names are hidden).
+Found a bug or want a feature? [Open an issue](../../issues). In the app, Settings → Privacy & diagnostics → **Copy diagnostics** collects the details that help (your username and, if you choose, file names are hidden).
 
 ## Licence
 Nyarchive is free to use, but it is not open source. See [EULA.txt](EULA.txt). The open-source parts it is built with are listed in [THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
