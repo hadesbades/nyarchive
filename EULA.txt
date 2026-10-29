@@ -1,0 +1,64 @@
+NYARCHIVE END-USER LICENCE AGREEMENT
+
+Version 1.0, 2026
+
+Nyarchive (the "Software") is provided by hadesbades ("we", "us"). By installing or
+using the Software you agree to this agreement. If you do not agree, do not install or
+use it.
+
+1. LICENCE
+We grant you a free, non-exclusive, non-transferable licence to install and use the
+Software on any number of computers that you own or control, for personal and commercial
+purposes, including the videos you create with it. Features we offer for a fee ("Pro"
+features or add-ons) may only be used with a valid licence key bought from us or our
+authorised reseller, under the terms shown when you buy it.
+
+2. YOUR CONTENT
+Recordings, clips, projects and other files you create with the Software belong to you.
+The Software works locally on your computer; we do not receive your content.
+
+3. RESTRICTIONS
+You may not, except where the law expressly allows it despite this restriction
+(for example § 69d and § 69e of the German Copyright Act, UrhG):
+  a) sell, rent, lend, sublicense or distribute the Software or copies of it, or offer it
+     for download, except by linking to our official download page;
+  b) decompile, disassemble or reverse engineer the Software;
+  c) remove, bypass or disable licence checks or the limits of the free version;
+  d) remove copyright notices or present the Software as your own.
+
+4. THIRD-PARTY COMPONENTS
+The Software contains open-source components that are licensed to you under their own
+licences, listed in THIRD_PARTY_LICENSES.txt and THIRD_PARTY_NOTICES.md, which are
+installed with the Software. Nothing in this agreement limits your rights under those
+licences. Programs the Software downloads at your request (such as FFmpeg, Real-ESRGAN
+and RIFE) are not part of the Software and are provided by their authors under their own
+licences.
+
+5. UPDATES
+The Software can check our release page for newer versions. You can turn this off in
+Settings. Updates are only installed when you choose to install them, and are covered
+by this agreement unless they come with a different one.
+
+6. LIABILITY
+The free version is given to you without charge. We are therefore liable only for intent
+and gross negligence (§ 521 BGB), and for defects only if we concealed them fraudulently
+(§ 524 BGB). For paid features and add-ons, the statutory warranty applies; we are liable
+without limitation for intent and gross negligence, and for slight negligence only for
+the breach of essential contractual obligations, limited to the damage that was typical
+and foreseeable when the contract was made. In all cases we remain liable without
+limitation for injury to life, body or health, under the Product Liability Act
+(ProdHaftG) and under any guarantee we gave. Please keep backups of important recordings.
+
+7. TERMINATION
+This licence ends automatically if you break it. You must then delete the Software.
+Sections 2, 4, 6 and 8 remain in effect.
+
+8. GENERAL
+This agreement is governed by the law of the Federal Republic of Germany, excluding the
+UN Convention on Contracts for the International Sale of Goods. If you are a consumer,
+this choice of law does not take away the protection given to you by the mandatory law
+of the country where you live. If a provision is invalid, the rest of the agreement
+remains in effect.
+
+Copyright (c) 2026 hadesbades. All rights reserved.
+"Nyarchive" and the Nyarchive logo are our trademarks.
