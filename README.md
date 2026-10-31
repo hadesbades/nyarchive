@@ -1,6 +1,6 @@
 # Nyarchive
 
-A cosy, catgirl-themed Windows app for clipping your gameplay, editing the clips and compressing them (=^･ω･^=). Everything happens on your PC: no account, no ads, no tracking and no cloud uploads.
+A cosy, catgirl-themed Windows app for clipping your gameplay, editing the clips and compressing them with minimal RAM or storage usage (=^･ω･^=). Everything happens on your PC: no account, no ads, no tracking and no cloud uploads.
 
 **[Download the newest version](../../releases/latest)** (download `Nyarchive_x.y.z_x64-setup.exe`, then run it). Nyarchive updates itself after that.
 
