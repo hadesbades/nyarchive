@@ -1,6 +1,11 @@
 # Changelog
 
-What changed in each version of Nyarchive.
+Each version's section becomes the notes the app shows for that update (`npm run release:manifest`). Write it for players, not developers.
+
+## [0.1.1]
+- **Update announcement:** a new version now shows in the middle of the window when you open Nyarchive, with what's new and an Update now button. It downloads, installs and restarts by itself; your clips, settings and Pro stay.
+- **Discord status:** friends who see you using Nyarchive get a "Get Nyarchive" button under your status.
+- **Community:** Nyarchive's TikTok, YouTube and GitHub, as small icons at the bottom of the sidebar and in Settings → Community. A Discord server is coming soon.
 
 ## [0.1.0]
 First public version.
