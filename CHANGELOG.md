@@ -2,6 +2,24 @@
 
 Each version's section becomes the notes the app shows for that update (`npm run release:manifest`). Write it for players, not developers.
 
+## [0.1.2]
+- **Editor, sound inside the clip:** a video's sound now lives inside the video clip, like in CapCut, with no separate audio track. The small arrow on the clip opens the sound band with a bigger waveform and fade handles; volume, mute, normalising and fades are in the clip's new Audio tab.
+- **Editor, trimming:** while you trim the start of a clip it follows the handle, and when you let go it moves back to where it started, with no gap. The clip, its waveform and the preview follow the handle while you drag.
+- **Editor, timeline:** the playhead stays inside the timeline and no longer slides over the track names. Dragging it (or a clip) past the edge scrolls the timeline. Zooming in shows more thumbnails instead of stretching them.
+- **Editor, more:** Play at the end starts again from the beginning. New Grain slider under Color. The before/after divider can be dragged left and right, and goes away when its clip is deleted. The Music tab finds new songs by itself.
+- **Settings:** a search box above the sections. Appearance → Logo → "Match theme to logo" gives the whole interface (page, sidebar, panels, buttons) the logo's colours, live while you pick them, and keeps them across themes and restarts.
+- **HDR screens:** "Always SDR" on a monitor in HDR mode records Windows' own SDR picture, where bright parts can look washed out. The new "SDR, true colours" option converts the real HDR colours instead (uses about one CPU core more while recording).
+- **Instant replay above 60 fps no longer eats memory:** at 120/144 fps, when the graphics card's encoder fell behind for a moment (often while a game starts), FFmpeg could pile up gigabytes of video frames. It now drops frames it can't use instead, so memory stays flat and replays keep their full length.
+- **Memory limit for recording:** Settings → Performance → Memory limit (3 GB by default). If the recording FFmpeg ever goes past it, it is restarted and the replay buffer keeps everything; Windows also enforces a hard cap at twice the limit.
+- **See what Nyarchive really uses:** Clip Studio shows Nyarchive's memory and CPU together with its FFmpeg and interface (Task Manager lists them apart), with a breakdown under Resources.
+- **Software encoders:** recording with x264/x265 while the graphics card has an encoder now says that it lowers your game's frame rate, with a button to switch to Automatic.
+- **Clearer capture errors:** when FFmpeg stops, the message names the real reason instead of a routine note like "Guessed Channel Layout".
+- **Smooth recordings in GPU-heavy games (Free):** the watermark is now added when you save a replay or recording instead of while recording. Drawing it during recording meant copying every picture off the graphics card, and in games that keep the card busy that lost up to half the pictures (measured in CarX: about 32 of 60 per second). Recordings now keep all 60. Saving takes a few seconds longer (a 3-minute recording takes about 25 seconds), because the clip is encoded once more at a higher quality, all on the graphics card. The same goes for recordings scaled down to 1080p: Windows now scales them on the graphics card. With Pro and the watermark switched off, nothing changes: saving stays an instant copy.
+- **No more frozen capture:** when the capture got no pictures for a moment (the screen turned off, or a game took it over), Nyarchive could hang for good the first time, and instant replay, recording and saving stopped answering. It now restarts the capture as intended.
+- **Recovery keeps the whole recording:** recovering a recording after a crash no longer drops its last seconds (it used to for anything longer than about 25 seconds), and it finishes much faster.
+- **Instant replay uses less memory:** with an NVIDIA card, the recording FFmpeg needs far less RAM, with the same picture, frame rate and replay length. At 1080p60 it went from about 420 to 330 MB, and Free (with the watermark) from about 770 to 330 MB. HDR uses about 180 MB less. Laptops whose screen runs on another graphics chip keep the previous way.
+- **Instant replay, lighter on games:** the replay buffer no longer does more work the longer it runs.
+
 ## [0.1.1]
 - **Update announcement:** a new version now shows in the middle of the window when you open Nyarchive, with what's new and an Update now button. It downloads, installs and restarts by itself; your clips, settings and Pro stay.
 - **Discord status:** friends who see you using Nyarchive get a "Get Nyarchive" button under your status.
