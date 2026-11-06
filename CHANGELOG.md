@@ -2,6 +2,9 @@
 
 Each version's section becomes the notes the app shows for that update (`npm run release:manifest`). Write it for players, not developers.
 
+## [0.1.4]
+- **No more black recordings after starting Windows:** on an HDR screen, Nyarchive started right at Windows login could record nothing but black (with only the watermark visible), because Windows' screen capture never sent it a picture. Nyarchive now checks for that while recording: if its recording is black while the screen shows something, it starts the capture again within a few seconds, and if that happens twice it switches to the older capture method until its next start.
+
 ## [0.1.3]
 - **HDR screens:** HDR on Auto now records normal SDR with Windows' own colour conversion, so it looks right everywhere and is as light as any recording (on an HDR screen, FFmpeg needed about 900 MB and most of a CPU core for HDR10; now under 300 MB). Real HDR10 recording is its own choice ("HDR10") for whoever wants it. "Always SDR" no longer looks washed out, and "SDR, true colours" is the same as the new SDR, so both now use it.
 - **Recording on the processor, said out loud:** when the graphics card's encoder doesn't work (most often an NVIDIA driver too old for Nyarchive's FFmpeg), Automatic records with the processor instead, which lowers game frame rates and needs about a gigabyte more memory. Nyarchive now tells you so at start and in Settings, and names the fix: update the graphics driver. After a driver update it checks the encoders again by itself (before, it kept the old result until you clicked Re-detect). Settings shows each graphics card's driver version.
