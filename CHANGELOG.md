@@ -2,6 +2,12 @@
 
 Each version's section becomes the notes the app shows for that update (`npm run release:manifest`). Write it for players, not developers.
 
+## [0.1.3]
+- **HDR screens:** HDR on Auto now records normal SDR with Windows' own colour conversion, so it looks right everywhere and is as light as any recording (on an HDR screen, FFmpeg needed about 900 MB and most of a CPU core for HDR10; now under 300 MB). Real HDR10 recording is its own choice ("HDR10") for whoever wants it. "Always SDR" no longer looks washed out, and "SDR, true colours" is the same as the new SDR, so both now use it.
+- **Recording on the processor, said out loud:** when the graphics card's encoder doesn't work (most often an NVIDIA driver too old for Nyarchive's FFmpeg), Automatic records with the processor instead, which lowers game frame rates and needs about a gigabyte more memory. Nyarchive now tells you so at start and in Settings, and names the fix: update the graphics driver. After a driver update it checks the encoders again by itself (before, it kept the old result until you clicked Re-detect). Settings shows each graphics card's driver version.
+- **No more "FFmpeg isn't installed" after an update:** right after an update or reinstall, Nyarchive checks your encoders again for a few seconds, and pages opening meanwhile said FFmpeg was missing. They now wait for that check.
+- **FFmpeg update for everyone:** Nyarchive now offers its own FFmpeg to anyone whose FFmpeg can't keep recording on the graphics card, not only above 60 fps. Recordings scaled to a smaller size (Free on screens above 1080p) and HDR screens recorded in SDR need it to stay light; without it, the capture status says so.
+
 ## [0.1.2]
 - **Editor, sound inside the clip:** a video's sound now lives inside the video clip, like in CapCut, with no separate audio track. The small arrow on the clip opens the sound band with a bigger waveform and fade handles; volume, mute, normalising and fades are in the clip's new Audio tab.
 - **Editor, trimming:** while you trim the start of a clip it follows the handle, and when you let go it moves back to where it started, with no gap. The clip, its waveform and the preview follow the handle while you drag.
